@@ -15,7 +15,7 @@ const FilesList = () => {
         console.log(data)
         setErrorMsg('');
         setFilesList(data);
-        console.log("ggggg"+filesList.title)
+        
 ///////////
 // await axios.get('http://localhost:3030/getAllFiles').then(response =>{
 //   setFilesList(response.data)
