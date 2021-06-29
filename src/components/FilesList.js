@@ -35,7 +35,7 @@ const FilesList = () => {
 
   const downloadFile = async (id, path, mimetype) => {
     try {
-      const result = await axios.get(`${API_URL}/download/${id}`, {
+      const result = await axios.get('${API_URL}/download/${id}', {
         responseType: 'blob'
       });
       const split = path.split('/');
