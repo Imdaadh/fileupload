@@ -11,7 +11,7 @@ const FilesList = () => {
     const getFilesList = async () => {
       try {
         console.log("ggggg")
-        const { data } = await axios.get(`${API_URL}/getAllFiles`);
+        const { data } = await axios.get('https://fileuploadaf.herokuapp.com/getAllFiles');
         console.log(data)
         setErrorMsg('');
         setFilesList(data);
